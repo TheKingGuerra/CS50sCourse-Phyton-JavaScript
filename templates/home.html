@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mx-auto px-4">
+    <!-- Hero Section -->
+    <div class="flex flex-col md:flex-row items-center justify-between py-20">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm [Your Name]</h1>
+            <p class="text-xl text-gray-300 mb-6">Full Stack Developer</p>
+            <p class="text-gray-400 mb-8">
+                Passionate about creating elegant solutions to complex problems. 
+                Specialized in web development and software engineering.
+            </p>
+            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                Get in Touch
+            </a>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+            <div class="w-64 h-64 rounded-full bg-gray-700 flex items-center justify-center">
+                <span class="text-gray-500">Profile Photo</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="py-20" id="projects">
+        <h2 class="text-3xl font-bold mb-12 text-center">Featured Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project Card 1 -->
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-2xl">
+                <div class="h-48 bg-gray-700 flex items-center justify-center">
+                    <span class="text-gray-500">Project Image</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Project Name</h3>
+                    <p class="text-gray-400 mb-4">A brief description of the project and its main features.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">React</span>
+                        <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">Node.js</span>
+                        <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-2xl">
+                <div class="h-48 bg-gray-700 flex items-center justify-center">
+                    <span class="text-gray-500">Project Image</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Project Name</h3>
+                    <p class="text-gray-400 mb-4">A brief description of the project and its main features.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">Python</span>
+                        <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">Django</span>
+                        <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition duration-300 hover:shadow-2xl">
+                <div class="h-48 bg-gray-700 flex items-center justify-center">
+                    <span class="text-gray-500">Project Image</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Project Name</h3>
+                    <p class="text-gray-400 mb-4">A brief description of the project and its main features.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">Vue.js</span>
+                        <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">Firebase</span>
+                        <span class="px-3 py-1 bg-blue-600 rounded-full text-sm">Tailwind</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
